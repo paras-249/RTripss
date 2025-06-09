@@ -1,7 +1,7 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const { MongoClient, ServerApiVersion } = require('mongodb');
-const cors = require('cors');
+import express from 'express';
+import { json } from 'body-parser';
+import { MongoClient, ServerApiVersion } from 'mongodb';
+import cors from 'cors';
 
 const app = express();
 const port = 3000;
@@ -9,7 +9,7 @@ const port = 3000;
 const uri = "mongodb+srv://parasdoye196:rJ5wfh7jvCKc3AHC@rtrips.u79ns.mongodb.net/?retryWrites=true&w=majority&appName=RTrips";
 
 // Middleware
-app.use(bodyParser.json());
+app.use(json());
 app.use(cors());
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
