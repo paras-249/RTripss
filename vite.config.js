@@ -2,6 +2,6 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: '/', // <-- This is your repo name!
+  base: '/RTripss/', // <-- your repo name, with slashes
   plugins: [react()],
 })
