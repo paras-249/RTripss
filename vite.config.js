@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/', // Important! This must match your repository name
+  base: '/RTrpss/', // Important! This must match your repository name
 })
