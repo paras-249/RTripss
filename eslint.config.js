@@ -5,6 +5,16 @@ import reactRefresh from 'eslint-plugin-react-refresh'
 
 export default [
   { ignores: ['dist'] },
+  // ADD THIS BLOCK BELOW ⬇️
+  {
+    files: ['vite.config.js'],
+    languageOptions: {
+      globals: {
+        ...globals.node, // Enable Node.js globals for vite.config.js
+      },
+    },
+  },
+  // Your existing JS/JSX block
   {
     files: ['**/*.{js,jsx}'],
     languageOptions: {

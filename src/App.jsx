@@ -4,6 +4,8 @@ import Home from './routes/Home';
 import About from './routes/About';
 import Service from './routes/Service';
 import Contact from './routes/Contact';
+const apiUrl = import.meta.env.VITE_API_URL;
+console.log(apiUrl); // This works!
 
 
 function App() {
